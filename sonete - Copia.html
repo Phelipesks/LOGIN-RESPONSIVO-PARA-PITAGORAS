@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario interdisciplinar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <div class="img-box">
+      <img src="4.svg" alt="">
+    </div>
+    <div class="form-box">
+      <h2>Login</h2>
+      <p>Faça sua autenticação</p>
+      <form action="#">
+        <div class="input-group">
+          <label for="user">Usuario</label>
+          <input type="text" id="user" placeholder="Digite seu Usuario">
+        </div>
+        <div class="input-group senha">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Digite sua senha">
+       </div>
+       <div class="input-group">
+        <Button type="submit" onclick="logar(); return false">Enviar</Button>
+       </div>
+
+       <div class="input-group">
+        <button type="reset">Limpar</button>
+
+       </div>
+      
+      </form>
+      <script>
+        function logar(){
+
+            var login= document.getElementById('user').value;
+            var senha= document.getElementById('senha').value;
+
+            if(login =="admin" && senha == "admin"){
+                alert('SEJA BEM VINDO(A)');
+
+            }else{
+                alert('Usuario incorreto ou senha incorretos')
+            }
+        }
+
+
+      </script>
+    </div>
+
+
+
+  </div>
+
+</body>
+</html>
